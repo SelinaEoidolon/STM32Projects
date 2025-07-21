@@ -1,0 +1,9 @@
+build-idx:
+  generated-by: csolution version 2.4.0
+  csolution: HWT605_485.csolution.yml
+  cprojects:
+    - cproject: HWT605_485.cproject.yml
+  cbuilds:
+    - cbuild: HWT605_485+HWT605485.cbuild.yml
+      project: HWT605_485
+      configuration: +HWT605485

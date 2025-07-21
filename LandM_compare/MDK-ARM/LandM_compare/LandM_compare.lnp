@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"landm_compare\startup_stm32f103xb.o"
+"landm_compare\main.o"
+"landm_compare\gpio.o"
+"landm_compare\stm32f1xx_it.o"
+"landm_compare\stm32f1xx_hal_msp.o"
+"landm_compare\stm32f1xx_hal_gpio_ex.o"
+"landm_compare\stm32f1xx_hal_tim.o"
+"landm_compare\stm32f1xx_hal_tim_ex.o"
+"landm_compare\stm32f1xx_hal.o"
+"landm_compare\stm32f1xx_hal_rcc.o"
+"landm_compare\stm32f1xx_hal_rcc_ex.o"
+"landm_compare\stm32f1xx_hal_gpio.o"
+"landm_compare\stm32f1xx_hal_dma.o"
+"landm_compare\stm32f1xx_hal_cortex.o"
+"landm_compare\stm32f1xx_hal_pwr.o"
+"landm_compare\stm32f1xx_hal_flash.o"
+"landm_compare\stm32f1xx_hal_flash_ex.o"
+"landm_compare\stm32f1xx_hal_exti.o"
+"landm_compare\system_stm32f1xx.o"
+--strict --scatter "LandM_compare\LandM_compare.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LandM_compare.map" -o LandM_compare\LandM_compare.axf

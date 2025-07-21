@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.5.0
+  created-for: CMSIS-Toolbox@2.4.0
+  compiler: AC6
+  target-types:
+    - type: HWT605485
+      device: STMicroelectronics::STM32F407ZETx
+      optimize: debug
+  projects:
+    - project: HWT605_485.cproject.yml

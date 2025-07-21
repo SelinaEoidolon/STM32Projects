@@ -1,0 +1,13 @@
+# CMSIS Build Audit File generated on 2025-01-16T16:30:05
+
+# Project Description File: e:/AA_study_resource/Cube_MX/HWT605_485/MDK-ARM/HWT605_485+HWT605485.cprj
+
+# Toolchain Configuration File: C:/Users/18160/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.4.0/etc/AC6.6.16.2.cmake
+
+# Package: ARM::CMSIS@5.9.0
+  Location: C:\Users\18160\AppData\Local\arm\packs/ARM/CMSIS/5.9.0/
+
+  * Component: ARM::CMSIS:CORE@5.6.0
+
+# Package: Keil::STM32F4xx_DFP@2.17.1
+  Location: C:\Users\18160\AppData\Local\arm\packs/Keil/STM32F4xx_DFP/2.17.1/

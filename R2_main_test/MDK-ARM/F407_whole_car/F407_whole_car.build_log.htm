@@ -1,0 +1,168 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 Lenovo, 22, LIC=UJWP0-B4GU8-74ZS0-BRAUW-BYKSI-V4V5W
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  E:\ProgramingDownload\Keil5Download\core\ARM\ACMSIS\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.16.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\Volleyball_Robot\R2_main_test\MDK-ARM\F407_whole_car.uvprojx
+Project File Date:  07/12/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\ProgramingDownload\Keil5Download\core\ARM\ACMSIS\Bin'
+Rebuild target 'F407_whole_car'
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_flash.c...
+compiling gpio.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling tim.c...
+compiling main.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling usart.c...
+compiling can.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling bsp_can.c...
+compiling bsp_delay.c...
+compiling CAN_receive.c...
+..\applications\Src\CAN_receive.c(179): warning:  #188-D: enumerated type mixed with another type
+  				MI_Motor[RxCAN_info_type_2.motor_id].motor_mode_state = RxCAN_info_type_2.mode_state;
+..\applications\Src\CAN_receive.c: 1 warning, 0 errors
+compiling pid_user.c...
+compiling pid.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim.c...
+compiling velocity_calc.c...
+compiling F_XandY.c...
+..\applications\classic\Src\F_XandY.c(15): warning:  #550-D: parameter "vl_omega"  was set but never used
+  void set_vl_omega(float vl_omega, float val) {
+..\applications\classic\Src\F_XandY.c(18): warning:  #550-D: parameter "vl_r"  was set but never used
+  void set_vl_r(float vl_r, float val) {
+..\applications\classic\Src\F_XandY.c(21): warning:  #550-D: parameter "angle"  was set but never used
+  void set_offset_angle(float angle, float val) {
+..\applications\classic\Src\F_XandY.c(27): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      w_arr[0] = -0.5 * v.v_x + 0.866 * v.v_y - omega*r;
+..\applications\classic\Src\F_XandY.c(29): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      w_arr[2] = -0.5 * v.v_x - 0.866 * v.v_y - omega*r;
+..\applications\classic\Src\F_XandY.c(26): warning:  #177-D: variable "angle"  was declared but never referenced
+      static float angle = PI/6.0f;
+..\applications\classic\Src\F_XandY.c: 6 warnings, 0 errors
+compiling timer_app.c...
+compiling hwt605.c...
+..\applications\Src\hwt605.c(138): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	return((angle*2*3.1415926535)/180);
+..\applications\Src\hwt605.c: 1 warning, 0 errors
+compiling planner_global.c...
+compiling displacement_PID.c...
+..\applications\Src\displacement_PID.c(15): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	motors_rnd[0]=motors_rnd[0]*((2*PI/8192.0)*(187.0/3591.0)*76);
+..\applications\Src\displacement_PID.c(16): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	motors_rnd[1]=motors_rnd[1]*((2*PI/8192.0)*(187.0/3591.0)*76);
+..\applications\Src\displacement_PID.c(17): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	motors_rnd[2]=motors_rnd[2]*((2*PI/8192.0)*(187.0/3591.0)*76);
+..\applications\Src\displacement_PID.c(21): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	my_angle_measure.yaw+=my_angle_measure.filtered_yaw_omega*DT;
+..\applications\Src\displacement_PID.c: 4 warnings, 0 errors
+compiling uart_app.c...
+compiling function_for_uart.c...
+..\applications\Src\function_for_uart.c(369): warning:  #111-D: statement is unreachable
+  					}break;
+..\applications\Src\function_for_uart.c(4): warning:  #177-D: variable "Buf"  was declared but never referenced
+  static uint8_t Buf[30]={0};//上位机数据包
+..\applications\Src\function_for_uart.c(7): warning:  #177-D: variable "mode_c"  was declared but never referenced
+  static uint8_t mode_c=0x01;
+..\applications\Src\function_for_uart.c(8): warning:  #550-D: variable "linux_navgt"  was set but never used
+  static uint8_t linux_navgt=0;
+..\applications\Src\function_for_uart.c: 4 warnings, 0 errors
+compiling main_app.c...
+..\applications\Src\main_app.c(89): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	my_angle_measure.yaw+=my_angle_measure.yaw_omega*DT;
+..\applications\Src\main_app.c(100): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	my_angle_measure.yaw+=my_angle_measure.filtered_yaw_omega*DT;
+..\applications\Src\main_app.c(28): warning:  #177-D: variable "shotState"  was declared but never referenced
+  static ShotState_t shotState = SHOT_IDLE;
+..\applications\Src\main_app.c(29): warning:  #177-D: variable "shotTickStart"  was declared but never referenced
+  static uint32_t shotTickStart = 0;
+..\applications\Src\main_app.c: 4 warnings, 0 errors
+compiling Mi.c...
+compiling automatic_control_promote.c...
+..\applications\Src\automatic_control_promote.c(31): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      float max_delta = this->max_acc * DT;
+..\applications\Src\automatic_control_promote.c(39): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          this->current_acc = step / DT;
+..\applications\Src\automatic_control_promote.c(111): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			this->current_s+=this->current_v*DT+0.5f*this->a_max*DT*DT;
+..\applications\Src\automatic_control_promote.c(111): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			this->current_s+=this->current_v*DT+0.5f*this->a_max*DT*DT;
+..\applications\Src\automatic_control_promote.c(112): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			this->current_v+=this->a_max*DT;
+..\applications\Src\automatic_control_promote.c(117): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			this->current_s+=this->v_max*DT;
+..\applications\Src\automatic_control_promote.c(121): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			this->current_s += this->current_v * DT - 0.5f * this->a_max * DT * DT;
+..\applications\Src\automatic_control_promote.c(121): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			this->current_s += this->current_v * DT - 0.5f * this->a_max * DT * DT;
+..\applications\Src\automatic_control_promote.c(122): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			this->current_v-=this->a_max*DT;
+..\applications\Src\automatic_control_promote.c(135): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	this->current_t+=DT;
+..\applications\Src\automatic_control_promote.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=26858 RO-data=1062 RW-data=324 ZI-data=6636  
+FromELF: creating hex file...
+"F407_whole_car\F407_whole_car.axf" - 0 Error(s), 30 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.0.0.pack
+                Keil::STM32F4xx_DFP@3.0.0
+                STMicroelectronics STM32F4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_F407_whole_car
+  E:/ProgramingDownload/Keil5Download/pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

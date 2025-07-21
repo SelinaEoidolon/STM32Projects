@@ -1,0 +1,12 @@
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+rtos_ledandmotor\port.o: E:\ProgramingDownload\Keil5Download\core\ARM\ACMSIS\Bin\..\include\stddef.h
+rtos_ledandmotor\port.o: E:\ProgramingDownload\Keil5Download\core\ARM\ACMSIS\Bin\..\include\stdint.h
+rtos_ledandmotor\port.o: ../Core/Inc/FreeRTOSConfig.h
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+rtos_ledandmotor\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

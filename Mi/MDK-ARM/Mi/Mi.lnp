@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"mi\startup_stm32f407xx.o"
+"mi\main.o"
+"mi\gpio.o"
+"mi\can.o"
+"mi\stm32f4xx_it.o"
+"mi\stm32f4xx_hal_msp.o"
+"mi\stm32f4xx_hal_can.o"
+"mi\stm32f4xx_hal_rcc.o"
+"mi\stm32f4xx_hal_rcc_ex.o"
+"mi\stm32f4xx_hal_flash.o"
+"mi\stm32f4xx_hal_flash_ex.o"
+"mi\stm32f4xx_hal_flash_ramfunc.o"
+"mi\stm32f4xx_hal_gpio.o"
+"mi\stm32f4xx_hal_dma_ex.o"
+"mi\stm32f4xx_hal_dma.o"
+"mi\stm32f4xx_hal_pwr.o"
+"mi\stm32f4xx_hal_pwr_ex.o"
+"mi\stm32f4xx_hal_cortex.o"
+"mi\stm32f4xx_hal.o"
+"mi\stm32f4xx_hal_exti.o"
+"mi\system_stm32f4xx.o"
+"mi\mi.o"
+--library_type=microlib --strict --scatter "Mi\Mi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Mi.map" -o Mi\Mi.axf
